@@ -1,0 +1,7 @@
+[Unit]
+Description=Start Nebula Mesh VPN as a service.
+[Service]
+Type=simple
+ExecStart=/bin/bash /etc/nebula/nebula-start.sh
+[Install]
+WantedBy=multi-user.target
