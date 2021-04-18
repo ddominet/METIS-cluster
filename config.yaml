@@ -246,37 +246,7 @@ firewall:
       host: any
 
     # Allow from any cluster_nodes
-    - port: 6443
-      proto: tcp
-      groups:
-        - cluster_nodes
-
-    - port: 8472
-      proto: udp
-      groups:
-        - cluster_nodes
-
-    - port: 10250
-      proto: tcp
-      groups:
-        - cluster_nodes
-
-    - port: 2379
-      proto: tcp
-      groups:
-        - cluster_nodes
-
-    - port: 2380
-      proto: tcp
-      groups:
-        - cluster_nodes
-
-    - port: 80
-      proto: tcp
-      groups:
-        - cluster_nodes
-
-    - port: 443
-      proto: tcp
+    - port: any
+      proto: any
       groups:
         - cluster_nodes
