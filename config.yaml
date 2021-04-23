@@ -242,11 +242,5 @@ firewall:
   inbound:
     # Allow icmp between any nebula hosts
     - port: any
-      proto: icmp
-      host: any
-
-    # Allow from any cluster_nodes
-    - port: any
       proto: any
-      groups:
-        - cluster_nodes
+      host: any
