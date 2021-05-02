@@ -6,11 +6,11 @@ from ray.util.placement_group import placement_group, remove_placement_group
 from time import sleep, perf_counter
 from tqdm import tqdm, trange
 
-TEST_NUM_NODES = 22
-MAX_ACTORS_IN_CLUSTER = 22
-MAX_RUNNING_TASKS_IN_CLUSTER = 22
-MAX_PLACEMENT_GROUPS = 22
-MAX_NUM_NODES = 22
+TEST_NUM_NODES = 4
+MAX_ACTORS_IN_CLUSTER = 4
+MAX_RUNNING_TASKS_IN_CLUSTER = 4
+MAX_PLACEMENT_GROUPS = 4
+MAX_NUM_NODES = 4
 
 
 def num_alive_nodes():
