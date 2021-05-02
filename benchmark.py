@@ -22,7 +22,7 @@ def num_alive_nodes():
 
 
 def scale_to(target):
-    while num_alive_nodes() < target:
+    while num_alive_nodes() =! target:
         ray.autoscaler.sdk.request_resources(bundles=[{"node": 1}] * target)
         print(f"Current # nodes: {num_alive_nodes()}, target: {target}")
         print("Waiting ...")
