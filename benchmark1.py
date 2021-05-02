@@ -7,7 +7,7 @@ from time import sleep, perf_counter
 from tqdm import tqdm
 
 NUM_NODES = 22
-OBJECT_SIZE = 2**28
+OBJECT_SIZE = 2**10
 
 
 def num_alive_nodes():
