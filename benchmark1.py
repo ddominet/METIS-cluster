@@ -6,7 +6,7 @@ import ray.autoscaler.sdk
 from time import sleep, perf_counter
 from tqdm import tqdm
 
-NUM_NODES = 20
+NUM_NODES = 22
 OBJECT_SIZE = 2**6
 
 
