@@ -1,4 +1,4 @@
-import time
+ray.init(address='auto', _redis_password='5241590000000000')import time
 import ray
 from matplotlib import pyplot as plt
 from openpyxl import Workbook
@@ -9,7 +9,7 @@ def stress_function(num):
     return sum([i*j*k for i in range(num) for j in range(i) for k in range(j)])
 
 if __name__ == "__main__":
-    ray.init(address = "auto")
+    ray.init(address='auto', _redis_password='5241590000000000')
 
     inp = int(input("Enter a number: "))
     czas = []
