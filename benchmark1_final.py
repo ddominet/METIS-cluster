@@ -1,4 +1,4 @@
-ray.init(address='auto', _redis_password='5241590000000000')import time
+import time
 import ray
 from matplotlib import pyplot as plt
 from openpyxl import Workbook
