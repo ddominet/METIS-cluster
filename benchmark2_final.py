@@ -11,7 +11,7 @@ def stress_function(num):
 
 
 if __name__ == "__main__":
-    ray.init(address="auto")
+    ray.init(address='auto', _redis_password='5241590000000000')
 
     inp = int(input("Enter a number divided by 50: "))
     assert inp%50 == 0, "Number should be divided by 50"
