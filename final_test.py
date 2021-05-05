@@ -15,7 +15,7 @@ def mega_work(start, end):
 time1 = time.time()
 
 if __name__ == "__main__":
-    ray.init(address='auto', _redis_password='5241590000000000')
+    ray.init(address='auto', _redis_password='5241590000000000', num_cpus = 8)
 
     czas =[]
     inp = int(input("Enter a number: "))
@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     for i in range(inp):
         start = time.time()
-        work = [(mega_work.remote(x*10, (x+1)*10)) for x in range(i)]
+        work = [(mega_work.remote(x*40, (x+1)*40)) for x in range(i)]
         ray.get(work)
         czas.append(time.time()-start)
 
