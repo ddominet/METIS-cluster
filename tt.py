@@ -15,7 +15,7 @@ def mega_work(start, end):
 time1 = time.time()
 
 if __name__ == "__main__":
-    ray.init(address='auto', _redis_password='5241590000000000', num_cpus = 8)
+    ray.init(address='auto', _redis_password='5241590000000000', num_cpus = 22)
 
     czas =[]
     inp = int(input("Enter a number: "))
