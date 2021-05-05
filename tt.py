@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     for i in range(inp):
         start = time.time()
-        work = [(mega_work.remote(x*40, (x+1)*40)) for x in range(i)]
+        work = [(mega_work.remote(x*10, (x+1)*10)) for x in range(i*10)]
         ray.get(work)
         czas.append(time.time()-start)
 
